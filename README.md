@@ -1,66 +1,82 @@
-## Foundry
+# Memoria Eterna NFT Collection
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+<div align="center" style="margin-bottom: 20px;">
 
-Foundry consists of:
+![The altar (ofrenda)](https://cdn.pixabay.com/photo/2023/10/21/17/51/ai-generated-8331893_1280.jpg)
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+</div>
 
-## Documentation
+A meaningful way to honor and remember loved ones through digital art on the blockchain. This project is part of the Cyfrin Solidity Advanced course, reimagined with Latin American cultural elements.
 
-https://book.getfoundry.sh/
+## About
+
+This NFT collection allows users to mint digital memorial tokens that celebrate the lives of those who have passed away. Each NFT can include:
+
+- A customizable altar (ofrenda) design
+- Personal photos and memories
+- Stories and messages
+- Traditional Día de los Muertos symbols
+
+## Technical Features
+
+- ERC721 implementation with custom metadata
+- On-chain memorial data storage
+- Customizable NFT rendering
+- Secure minting process
+- Memory preservation features
+
+## Getting Started
+
+```bash
+git clone https://github.com/yourusername/dia-de-los-muertos-nft
+cd dia-de-los-muertos-nft
+forge install
+forge test
+```
 
 ## Usage
 
-### Build
+1. Deploy the contract
 
-```shell
-$ forge build
+```bash
+forge script script/DeployDiaDeMuertos.s.sol --rpc-url $RPC_URL --broadcast
 ```
 
-### Test
+2. Mint a memorial NFT
 
-```shell
-$ forge test
+```bash
+cast send $CONTRACT_ADDRESS "mintMemorial(string,string)" "Name" "Story" --rpc-url $RPC_URL
 ```
 
-### Format
+## Development
 
-```shell
-$ forge fmt
+This project uses:
+
+- Foundry for development and testing
+- OpenZeppelin contracts
+- SVG generation for dynamic NFT art
+
+## Testing
+
+```bash
+forge test
+forge coverage
 ```
 
-### Gas Snapshots
+## Contributing
 
-```shell
-$ forge snapshot
-```
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### Anvil
+## License
 
-```shell
-$ anvil
-```
+MIT
 
-### Deploy
+## Acknowledgements
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+- Cyfrin Solidity Course
+- OpenZeppelin
+- Latin American cultural traditions
 
-### Cast
+---
 
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Built with 💜 to honor those who live in our memories

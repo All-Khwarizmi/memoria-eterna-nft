@@ -1,0 +1,47 @@
+{
+  "name": "La Calavera Elegante #1",
+  "description": "A stunning Day of the Dead artwork featuring a skeletal figure adorned with intricate floral patterns and traditional sugar skull makeup. The piece combines elements of beauty and mortality, with roses, turquoise accents, and delicate lace-like details.",
+  "image": "ipfs://<CID-to-be-added>",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "White"
+    },
+    {
+      "trait_type": "Style",
+      "value": "Día de los Muertos"
+    },
+    {
+      "trait_type": "Main Colors",
+      "value": ["Turquoise", "Coral", "White"]
+    },
+    {
+      "trait_type": "Floral Elements",
+      "value": "Roses"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Ornate Earrings"
+    },
+    {
+      "trait_type": "Details",
+      "value": "Skeletal Pattern"
+    },
+    {
+      "trait_type": "Decorative Elements",
+      "value": "Feathers"
+    },
+    {
+      "trait_type": "Face Paint",
+      "value": "Traditional Sugar Skull"
+    },
+    {
+      "trait_type": "Artistic Style",
+      "value": "Detailed Illustration"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    }
+  ]
+}
